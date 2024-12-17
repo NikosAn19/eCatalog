@@ -1,5 +1,5 @@
 import "./Header.css";
-import "../../Global/globalSettings.css";
+import "../../Global/CSS/globalSettings.css";
 
 export default function Header() {
   return (

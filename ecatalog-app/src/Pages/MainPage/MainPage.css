@@ -1,4 +1,4 @@
-@import url("../../Global/variables.css");
+@import url("../../Global/CSS/variables.css");
 
 .overlay {
   pointer-events: none;
