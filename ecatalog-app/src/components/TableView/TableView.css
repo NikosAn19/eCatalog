@@ -1,0 +1,28 @@
+@import url("../../Global/variables.css");
+
+.tableView__container {
+  display: flex;
+  width: 60vw;
+  height: 60vh;
+  margin-top: 5%;
+  margin-left: 5%;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+}
+
+.tableView__container button {
+  width: 15%;
+  height: 10%;
+
+  border-radius: 8px;
+  border: 1px solid var(--third-color);
+}
+.tableView__container button:hover {
+  cursor: pointer;
+  border: 1px solid var(--third-color);
+  background-color: var(--third-color);
+}

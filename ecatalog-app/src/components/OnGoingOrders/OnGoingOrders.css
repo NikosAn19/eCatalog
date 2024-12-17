@@ -1,0 +1,91 @@
+@import url("../../Global/variables.css");
+
+.ongoing__container {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-top: -30%;
+  margin-right: 5px;
+  margin-left: 70%;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  max-height: 50vh;
+}
+
+.title__container {
+  color: var(--text-color) !important;
+  font-size: 20px !important;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--third-color);
+}
+.ongoing__container ul {
+  width: 100%;
+  list-style: none;
+  color: var(--text-color);
+}
+.ongoing__container li {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.ongoing__container li:hover {
+  background-color: var(--primary-color);
+}
+.ongoing__container li:nth-child(2) {
+  border: 1px solid red;
+}
+
+.ongoing__container button:hover {
+  background-color: var(--third-color);
+  cursor: pointer;
+}
+.list-buttons__container {
+  display: flex;
+  gap: 5%;
+  width: 30%;
+}
+#view-order__bttn {
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+#set-delivered__bttn {
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  padding: 1%;
+  margin-bottom: 1%;
+  background-color: green;
+  color: var(--text-color);
+}
+#set-delivered__bttn:hover {
+  opacity: 2.5;
+}
+
+.blinking {
+  color: var(--text-color);
+  animation: blink-animation 1s infinite; /* Animation που επαναλαμβάνεται συνεχώς */
+}
+
+/* Ορισμός του animation */
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background-color: red;
+  }
+}
