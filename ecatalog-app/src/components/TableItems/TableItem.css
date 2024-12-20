@@ -1,0 +1,28 @@
+@import url("../../Global/CSS/variables.css");
+
+.tableItem__container {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  flex: 1;
+  background-color: var(--third-color);
+  transition: all 1.5 ease;
+}
+.tableItem__container:hover {
+  background-color: var(--background-color);
+  cursor: pointer;
+  span {
+    color: var(--text-color) !important;
+  }
+}
+
+.tableItem__container span {
+  color: black;
+  text-align: center;
+  white-space: nowrap;
+}

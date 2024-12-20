@@ -1,0 +1,77 @@
+@import url("../../Global/CSS/variables.css");
+
+.tables-settings__container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  width: 30vw;
+  height: auto;
+  padding: 5px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--third-color) 30%, transparent 50%);
+}
+.top-bar button {
+  width: 5%;
+  color: var(--text-color);
+  background-color: transparent;
+  border: none;
+  font-size: 26px;
+  border-radius: 5px;
+}
+
+.top-bar button:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+#table-title {
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 20px;
+}
+.tables-info__container {
+  margin-top: 1%;
+  width: 100%;
+  height: fit-content;
+  border: 1px solid var(--third-color);
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}
+.tables-info__container ul {
+  list-style-type: none;
+  text-decoration: none;
+  width: 100%;
+}
+.tables-info__container li {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: var(--text-color);
+}
+.tables-info__container button {
+  width: fit-content;
+  font-size: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  border: none;
+}
+.tables-info__container button:hover {
+  background-color: var(--third-color);
+  cursor: pointer;
+}

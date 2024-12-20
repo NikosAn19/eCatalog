@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import GlobalLayout from "./Global/GlobalLayouts/GlobalLayout.tsx";
 
 import MainPage from "./Pages/MainPage/MainPage.tsx";
+import SettingsPage from "./Pages/SettingsPage/SettingsPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -17,8 +18,12 @@ const router = createBrowserRouter([
     errorElement: <div> ERROR 404 PAGE NOT FOUND</div>,
   },
   {
-    path: "/about",
-    element: <div />,
+    path: "/settings",
+    element: (
+      <GlobalLayout>
+        <SettingsPage />
+      </GlobalLayout>
+    ),
   },
   {
     path: "/contact",

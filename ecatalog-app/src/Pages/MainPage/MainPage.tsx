@@ -33,8 +33,11 @@ export default function MainPage() {
 
   const [isOrderVisible, setOrderVisible] = useState(false);
 
-  const handleOrderVisible = (isVisible: boolean) => {
-    setOrderVisible(isVisible);
+  const handleOrderVisible = () => {
+    setOrderVisible(true);
+  };
+  const handleOrderClose = () => {
+    setOrderVisible(false);
   };
 
   return (
@@ -45,7 +48,7 @@ export default function MainPage() {
       </div>
 
       {isOrderVisible && (
-        <NewOrder orderInfo={order} handleVisibility={handleOrderVisible} />
+        <NewOrder orderInfo={order} handleVisibility={handleOrderClose} />
       )}
     </>
   );

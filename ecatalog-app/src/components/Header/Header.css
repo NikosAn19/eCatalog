@@ -17,6 +17,9 @@
   font-size: 42px;
   color: var(--text-color);
 }
+.logo__container span:hover {
+  cursor: pointer;
+}
 .options__container {
   /* border: 1px solid green; */
   width: 100%;
@@ -25,4 +28,9 @@
   align-items: flex-end;
   font-size: 20px;
   color: var(--text-color);
+  gap: 5%;
+}
+#settings-menu:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
 }

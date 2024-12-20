@@ -4,7 +4,7 @@
   position: fixed;
   top: 15%;
   left: 40%;
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   width: 20vw;
   height: auto;
 
@@ -19,7 +19,7 @@
 .top__container {
   width: 100%;
 
-  background-color: var(--primary-color);
+  background-color: var(--backround-color);
   display: flex;
   flex-direction: column;
   /* border: 1px solid red; */

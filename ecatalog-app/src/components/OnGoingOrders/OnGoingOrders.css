@@ -34,6 +34,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
+  border-radius: 5px;
 }
 .ongoing__container li:hover {
   background-color: var(--primary-color);

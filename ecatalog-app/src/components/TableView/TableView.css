@@ -7,11 +7,13 @@
   margin-top: 5%;
   margin-left: 5%;
 
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: var(--secondary-color);
   border-radius: 8px;
+  /* overflow: hidden; */
+  max-height: auto;
+  flex-wrap: wrap;
 }
 
 .tableView__container button {
@@ -25,4 +27,12 @@
   cursor: pointer;
   border: 1px solid var(--third-color);
   background-color: var(--third-color);
+}
+#notables-prompt {
+  font-size: 26px;
+  text-align: center;
+  color: var(--text-color);
+  position: absolute;
+  top: 42%;
+  left: 30%;
 }
