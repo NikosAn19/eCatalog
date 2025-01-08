@@ -4,7 +4,7 @@
   position: fixed;
   top: 15%;
   left: 40%;
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
   width: 20vw;
   height: auto;
 
@@ -13,7 +13,7 @@
   align-items: center;
 
   border-radius: 5px;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--secondary-color);
   z-index: 1001;
 }
 .top__container {
@@ -27,7 +27,7 @@
 
   justify-content: space-between;
   align-items: flex-end;
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--third-color);
 }
 .close_bttn_container {
   width: 100%;
@@ -49,16 +49,16 @@
   height: 100% !important;
   margin: 0 !important;
   border-radius: 5px !important;
-  background-color: transparent;
+  /* background-color: transparent; */
   border: none;
   color: var(--text-color);
 
-  /* background-color: transparent;
-  box-shadow: none; */
+  background-color: var(--secondary-color);
+  box-shadow: none;
   /* border: none; */
 }
-.close_bttn_container button:hover {
-  background-color: var(--secondary-color);
+#close-bttn:hover {
+  background-color: var(--third-color);
   cursor: pointer;
 }
 
@@ -87,9 +87,13 @@
   margin-top: 5%;
   border-radius: 8px;
   margin-bottom: 8px;
+  background-color: var(--background-color);
+  border: none;
+  color: var(--text-color);
 }
 .neworder__panel button:hover {
   cursor: pointer;
+  background-color: var(--third-color);
 }
 
 .category__container {
@@ -101,8 +105,8 @@
 
 .category__container h3 {
   text-align: left;
-  border-bottom: 1px solid var(--secondary-color);
-  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--third-color);
+  border-top: 1px solid var(--third-color);
 }
 .comments__container {
   width: 100%;

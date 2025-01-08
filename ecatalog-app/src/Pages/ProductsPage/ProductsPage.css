@@ -1,0 +1,85 @@
+@import url("../../Global/CSS/variables.css");
+
+.products-panel__container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  margin-top: 5%;
+  max-width: 50vw;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid var(--third-color);
+}
+.products-panel__container ul {
+  list-style-type: none;
+  color: var(--text-color);
+  width: auto;
+}
+.appetizers-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.category-title {
+  width: 100%;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 26px;
+  padding: 5px;
+  border-bottom: 1px solid var(--third-color);
+}
+.appetizers-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid var(--secondary-color);
+  width: auto;
+}
+
+.appetizers-section li > span {
+  width: 25%;
+}
+img {
+  width: 20%;
+  border: none;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.action-buttons__container {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  padding: 5px;
+  width: fit-content;
+}
+
+.action-buttons__container button {
+  border-radius: 5px;
+  border: none;
+  color: var(--text-color);
+  background-color: var(--third-color);
+  font-size: 15px;
+  padding: 10px;
+}
+
+.action-buttons__container button:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+.top-prompt__container {
+  text-align: center;
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 42%;
+  top: 10%;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.top-prompt__container a {
+  color: red;
+}

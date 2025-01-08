@@ -6,6 +6,10 @@ import GlobalLayout from "./Global/GlobalLayouts/GlobalLayout.tsx";
 
 import MainPage from "./Pages/MainPage/MainPage.tsx";
 import SettingsPage from "./Pages/SettingsPage/SettingsPage.tsx";
+import Wizard from "./Pages/WizardPage/Wizard.tsx";
+import ProductsPage from "./Pages/ProductsPage/ProductsPage.tsx";
+import AddNewProductPage from "./Pages/AddNewProductPage/AddNewProductPage.tsx";
+import TestingPage from "./Pages/TestingPage/TestingPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -26,8 +30,36 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/contact",
-    element: <div />,
+    path: "/wizard",
+    element: (
+      <GlobalLayout>
+        <Wizard />
+      </GlobalLayout>
+    ),
+  },
+  {
+    path: "/products",
+    element: (
+      <GlobalLayout>
+        <ProductsPage />
+      </GlobalLayout>
+    ),
+  },
+  {
+    path: "/add-new-product",
+    element: (
+      <GlobalLayout>
+        <AddNewProductPage />
+      </GlobalLayout>
+    ),
+  },
+  {
+    path: "/testing",
+    element: (
+      <GlobalLayout>
+        <TestingPage />
+      </GlobalLayout>
+    ),
   },
 ]);
 createRoot(document.getElementById("root")!).render(

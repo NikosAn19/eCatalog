@@ -1,0 +1,87 @@
+@import url("../../../Global/CSS/variables.css");
+
+.landing-panel__container {
+  width: 25vw;
+  height: 50vh;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid var(--third-color);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+.title-topbar {
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+  font-size: 35px;
+  width: 100%;
+  margin-top: 10%;
+  /* border-bottom: 1px solid
+    color-mix(in srgb, var(--third-color) 80%, transparent 50%); */
+}
+
+.name-form span {
+  color: var(--text-color);
+  font-size: 26px;
+}
+.name-form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 10%;
+  width: 100%;
+  height: 70%;
+  color: var(--text-color);
+}
+
+.name-form-input__box {
+  position: relative;
+  width: 50%;
+}
+.name-form-input__box input {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--third-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  outline: none;
+  color: white;
+}
+
+.name-form-input__box span {
+  position: absolute;
+  padding: 5px;
+  font-size: 16px;
+  left: 0px;
+  color: var(--text-color);
+  pointer-events: none;
+}
+.name-form-input__box input:valid ~ span,
+.name-form-input__box input:focus ~ span {
+  color: var(--text-color);
+  transform: translateX(10px) translateY(-7px);
+  transition: all 0.5s;
+  padding: 0 10px;
+  background: var(--primary-color);
+  font-size: 1em;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.name-form button {
+  width: 50%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+}
+.name-form button:hover {
+  cursor: pointer;
+  background-color: var(--third-color);
+}

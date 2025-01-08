@@ -1,0 +1,12 @@
+@import url("../../Global/CSS/variables.css");
+
+.add-new-product-title__container {
+  position: absolute;
+  left: 45%;
+  top: 10%;
+  /* border: 1px solid red; */
+}
+.add-new-product-title__container span {
+  color: var(--text-color);
+  font-size: 26px;
+}

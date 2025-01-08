@@ -1,0 +1,102 @@
+@import url("../../CSS/variables.css");
+
+.add-new-product__container {
+  position: absolute;
+  padding: 15px;
+  left: 35%;
+  margin-top: 5%;
+  width: 30vw;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-new-img__container {
+  width: 40%;
+  height: fit-content;
+  border-radius: 5px;
+  border: none;
+}
+
+.add-new-img__container img {
+  width: 100%;
+
+  border-radius: 5px;
+  height: 100%;
+  padding: 0px;
+  object-fit: cover;
+}
+
+.add-new-product-form {
+  position: relative;
+
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid red; */
+  top: 30%;
+}
+
+.add-new-product-form button {
+  width: 50%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+}
+
+.add-new-product-form button:hover {
+  cursor: pointer;
+  background-color: var(--third-color);
+}
+
+.add-new-product-input__box {
+  position: relative;
+  width: 100%;
+}
+.add-new-product-input__box input {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--third-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  outline: none;
+  color: white;
+}
+
+.add-new-product-input__box span {
+  position: absolute;
+  padding: 5px;
+  left: 0px;
+  color: var(--text-color);
+  pointer-events: none;
+}
+.add-new-product-input__box input:valid ~ span,
+.add-new-product-input__box input:focus ~ span {
+  color: var(--text-color);
+  transform: translateX(10px) translateY(-7px);
+  transition: all 0.5s;
+  padding: 0 10px;
+  background: var(--primary-color);
+  font-size: 1em;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+.add-new-product-input__box textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  background-color: var(--third-color);
+  border-radius: 5px;
+  color: var(--text-color);
+}
+.add-new-product-input__box textarea::placeholder {
+  color: var(--text-color);
+}

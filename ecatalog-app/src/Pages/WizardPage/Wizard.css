@@ -1,0 +1,54 @@
+@import url("../../Global//CSS/variables.css");
+
+.wizard-content__container {
+  position: relative;
+  /* top: 15%; */
+
+  width: auto;
+  height: auto;
+  border: 1px solid var(--third-color);
+  border-radius: 5px;
+  padding: 15px;
+  background-color: var(--secondary-color);
+  margin-top: 50px;
+}
+.step-counter__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* gap: 15%; */
+  padding: 15px;
+}
+.step-counter__container div {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  border: 1px solid var(--third-color);
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  padding: 4%;
+  span {
+    border: none;
+  }
+}
+.step-counter__container .separator {
+  width: 100px;
+  height: 2px;
+  background-color: gray;
+}
+
+.wizard__container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  /* border: 1px solid red; */
+}

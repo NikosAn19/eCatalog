@@ -10,11 +10,11 @@
   flex-direction: column;
   gap: 2%;
   flex: 1;
-  background-color: var(--third-color);
+  background-color: var(--secondary-color);
   transition: all 1.5 ease;
 }
 .tableItem__container:hover {
-  background-color: var(--background-color);
+  background-color: var(--third-color);
   cursor: pointer;
   span {
     color: var(--text-color) !important;
@@ -22,7 +22,7 @@
 }
 
 .tableItem__container span {
-  color: black;
+  color: var(--text-color);
   text-align: center;
   white-space: nowrap;
 }

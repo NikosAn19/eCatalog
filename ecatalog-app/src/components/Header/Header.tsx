@@ -10,6 +10,9 @@ export default function Header() {
   const handleHomeNavigate = () => {
     navigate("/");
   };
+  const handleProductsNavigate = () => {
+    navigate("/products");
+  };
   return (
     <>
       <div className="header__container">
@@ -20,6 +23,9 @@ export default function Header() {
         <div className="options__container">
           <span className="user__text">
             Hello <b>restaurant </b>
+          </span>
+          <span id="products-menu" onClick={() => handleProductsNavigate()}>
+            Products
           </span>
           <span id="settings-menu" onClick={() => handleSettingsNavigate()}>
             Settings

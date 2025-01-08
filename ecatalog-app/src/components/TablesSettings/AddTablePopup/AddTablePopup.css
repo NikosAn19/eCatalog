@@ -1,0 +1,101 @@
+@import url("../../../Global/CSS/variables.css");
+
+.add-table__container {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  width: 25vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--third-color);
+  border-radius: 8px;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.top-bar-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--third-color);
+  padding: 5px;
+  font-size: 20px;
+}
+.top-bar-title button {
+  width: 5%;
+  color: var(--text-color);
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.top-bar-title button:hover {
+  cursor: pointer;
+  background-color: var(--third-color);
+}
+#add-new-title {
+  margin: 0 auto;
+}
+
+.new-table-form {
+  position: absolute;
+
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid red; */
+  top: 30%;
+}
+
+.new-table-form button {
+  width: 50%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+}
+
+.new-table-form button:hover {
+  cursor: pointer;
+  background-color: var(--third-color);
+}
+
+.new-table-input__box {
+  position: relative;
+  width: 100%;
+}
+.new-table-input__box input {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--third-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  outline: none;
+  color: white;
+}
+
+.new-table-input__box span {
+  position: absolute;
+  padding: 5px;
+  left: 0px;
+  color: var(--text-color);
+  pointer-events: none;
+}
+.new-table-input__box input:valid ~ span,
+.new-table-input__box input:focus ~ span {
+  color: var(--text-color);
+  transform: translateX(10px) translateY(-7px);
+  transition: all 0.5s;
+  padding: 0 10px;
+  background: var(--primary-color);
+  font-size: 1em;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}

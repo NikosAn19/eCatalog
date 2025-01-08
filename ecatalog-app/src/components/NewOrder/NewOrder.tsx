@@ -16,7 +16,9 @@ export default function NewOrder({
       <div className="neworder__panel">
         <div className="top__container">
           <div className="close_bttn_container">
-            <button onClick={() => handleVisibility()}>X</button>
+            <button id="close-bttn" onClick={() => handleVisibility()}>
+              X
+            </button>
           </div>
           <div className="tableId__container">
             <span>Table ID</span>

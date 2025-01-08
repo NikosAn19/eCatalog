@@ -13,6 +13,7 @@
   align-items: center;
   background-color: var(--secondary-color);
   border-radius: 8px;
+  border: 1px solid var(--third-color);
   max-height: 50vh;
 }
 
@@ -37,7 +38,7 @@
   border-radius: 5px;
 }
 .ongoing__container li:hover {
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
 }
 .ongoing__container li:nth-child(2) {
   border: 1px solid red;
@@ -45,6 +46,7 @@
 
 .ongoing__container button:hover {
   background-color: var(--third-color);
+  color: var(--text-color);
   cursor: pointer;
 }
 .list-buttons__container {
@@ -58,6 +60,11 @@
   border: none;
   padding: 1%;
   margin-bottom: 1%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+#view-order__bttn:hover {
+  background-color: var(--third-color);
 }
 #set-delivered__bttn {
   width: 50%;
@@ -65,11 +72,12 @@
   border: none;
   padding: 1%;
   margin-bottom: 1%;
-  background-color: green;
+  background-color: var(--background-color);
   color: var(--text-color);
 }
 #set-delivered__bttn:hover {
   opacity: 2.5;
+  background-color: var(--third-color);
 }
 
 .blinking {

@@ -3,9 +3,8 @@
 .tables-settings__container {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 15%;
-  left: 35%;
+  position: relative;
+
   width: 30vw;
   height: auto;
   padding: 5px;
@@ -70,8 +69,17 @@
   padding-bottom: 3px;
   border-radius: 5px;
   border: none;
+
+  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 .tables-info__container button:hover {
   background-color: var(--third-color);
   cursor: pointer;
+  color: var(--text-color);
+}
+
+.buttons__container {
+  display: flex;
+  gap: 5px;
 }

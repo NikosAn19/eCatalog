@@ -1,0 +1,44 @@
+@import url("../../../../Global/CSS/variables.css");
+
+.accept-edit-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 10%;
+  left: 55%;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  width: 20vw;
+  height: auto;
+}
+.accept-edit-content {
+  position: relative;
+  top: 40%;
+  padding: 15px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: var(--text-color);
+}
+.accept-edit-button__container {
+  display: flex;
+  gap: 10%;
+  /* border: 1px solid yellow; */
+  width: fit-content;
+}
+.accept-edit-button__container button {
+  width: 150px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--text-color);
+  padding: 5px;
+}
+
+.accept-edit-button__container button:hover {
+  cursor: pointer;
+  background-color: var(--third-color);
+}
