@@ -26,3 +26,25 @@
   text-align: center;
   white-space: nowrap;
 }
+.waiting {
+  border: 1px solid orange;
+  /* span {
+    color: black;
+  } */
+}
+
+.animated {
+  animation: orderedBlink 1s infinite;
+}
+
+@keyframes orderedBlink {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: green;
+  }
+  100% {
+    border-color: transparent;
+  }
+}

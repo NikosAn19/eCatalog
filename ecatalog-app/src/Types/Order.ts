@@ -3,9 +3,14 @@ export type OrderItem = {
   quantity: number;
 };
 export type Order = {
-  drinks?: OrderItem[];
-  appetizers?: OrderItem[];
-  main?: OrderItem[];
-  deserts?: OrderItem[];
-  comments?: string;
+  tableId?: string;
+  drinks?: OrderItem[] | null;
+  appetizers?: OrderItem[] | null;
+  main?: OrderItem[] | null;
+  deserts?: OrderItem[] | null;
+  comments?: string | null;
+};
+
+export type OrderAccepted = Order & {
+  acceptedAt: string; // Format: "HH:mm:ss"
 };

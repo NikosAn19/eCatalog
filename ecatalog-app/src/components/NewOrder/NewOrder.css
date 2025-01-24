@@ -14,7 +14,7 @@
 
   border-radius: 5px;
   border: 1px solid var(--secondary-color);
-  z-index: 1001;
+  z-index: 9999;
 }
 .top__container {
   width: 100%;
@@ -129,5 +129,5 @@
   width: 100%; /* Καλύπτει ολόκληρο το πλάτος της οθόνης */
   height: 100%; /* Καλύπτει ολόκληρο το ύψος της οθόνης */
   background: rgba(0, 0, 0, 0.5); /* Ημιδιαφανές μαύρο φόντο */
-  z-index: 1000; /* Υψηλότερο z-index ώστε να βρίσκεται πάνω από την υπόλοιπη σελίδα */
+  z-index: 999;
 }

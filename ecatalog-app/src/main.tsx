@@ -10,14 +10,17 @@ import Wizard from "./Pages/WizardPage/Wizard.tsx";
 import ProductsPage from "./Pages/ProductsPage/ProductsPage.tsx";
 import AddNewProductPage from "./Pages/AddNewProductPage/AddNewProductPage.tsx";
 import TestingPage from "./Pages/TestingPage/TestingPage.tsx";
+import OrderProvider from "./Context/OrderContext/OrderContext.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <GlobalLayout>
-        <MainPage />
-      </GlobalLayout>
+      <OrderProvider>
+        <GlobalLayout>
+          <MainPage />
+        </GlobalLayout>
+      </OrderProvider>
     ),
     errorElement: <div> ERROR 404 PAGE NOT FOUND</div>,
   },
