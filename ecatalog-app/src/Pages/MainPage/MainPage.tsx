@@ -5,8 +5,10 @@ import "./MainPage.css";
 import OnGoingOrdersView from "../../components/OnGoingOrders/OnGoingOrders";
 import { useOrderContext } from "../../Context/OrderContext/OrderContext";
 
+import AcceptedOrder from "../../components/AcceptedOrder/AcceptedOrder";
+
 export default function MainPage() {
-  const { orderVisible } = useOrderContext();
+  const { orderVisible, acceptedOrderVisible } = useOrderContext();
 
   return (
     <>
@@ -16,6 +18,7 @@ export default function MainPage() {
       </div>
 
       {orderVisible && <NewOrder />}
+      {acceptedOrderVisible && <AcceptedOrder />}
     </>
   );
 }

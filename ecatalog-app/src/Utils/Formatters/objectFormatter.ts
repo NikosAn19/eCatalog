@@ -9,6 +9,7 @@ const convertOrderItemKeys = (items: any[]): OrderItem[] => {
 };
 
 export const convertToCamelCase = (order: any): Order => ({
+  orderId: order.OrderId,
   tableId: order.TableId,
   drinks: convertOrderItemKeys(order.Drinks),
   appetizers: convertOrderItemKeys(order.Appetizers),

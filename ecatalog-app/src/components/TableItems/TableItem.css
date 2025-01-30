@@ -12,6 +12,7 @@
   flex: 1;
   background-color: var(--secondary-color);
   transition: all 1.5 ease;
+  pointer-events: none;
 }
 .tableItem__container:hover {
   background-color: var(--third-color);
@@ -35,6 +36,7 @@
 
 .animated {
   animation: orderedBlink 1s infinite;
+  pointer-events: all;
 }
 
 @keyframes orderedBlink {

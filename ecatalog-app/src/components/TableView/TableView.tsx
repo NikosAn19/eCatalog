@@ -3,10 +3,10 @@ import "../../Types/TableData";
 
 import TableItem from "../TableItems/TableItem";
 
-import { useTableView } from "./useTableView";
+import { useOrderContext } from "../../Context/OrderContext/OrderContext";
 
 export default function TableView() {
-  const { tableDataList } = useTableView();
+  const { tableDataList } = useOrderContext();
 
   return (
     <>

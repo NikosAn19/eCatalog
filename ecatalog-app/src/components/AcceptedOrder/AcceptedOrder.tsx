@@ -1,24 +1,27 @@
-import "./NewOrder.css";
+import "./AcceptedOrder.css";
 import { useOrderContext } from "../../Context/OrderContext/OrderContext";
-import { useNewOrder } from "./useNewOrder";
+import { useAcceptedOrder } from "./useAcceptedOrder";
 
-export default function NewOrder() {
-  const { handleOrderVisible } = useOrderContext();
+export default function AcceptedOrders() {
+  const { handleAcceptedOrderVisible } = useOrderContext();
 
-  const { mappedOrder, currentOrder, handleAcceptedOrder } = useNewOrder();
+  const { mappedOrder, acceptedOrder } = useAcceptedOrder();
 
   return (
     <>
-      <div className="neworder__overlay"></div>
-      <div className="neworder__panel">
-        <div className="top__container">
+      <div className="acceptedOrders__overlay"></div>
+      <div className="acceptedOrders__panel">
+        <div className="acceptedOrders-top__container">
           <div className="close_bttn_container">
-            <button id="close-bttn" onClick={() => handleOrderVisible(false)}>
+            <button
+              id="close-bttn"
+              onClick={() => handleAcceptedOrderVisible(false)}
+            >
               X
             </button>
           </div>
           <div className="tableId__container">
-            <span>{currentOrder?.tableId}</span>
+            <span>{acceptedOrder?.tableId}</span>
           </div>
         </div>
         {mappedOrder &&
@@ -42,17 +45,9 @@ export default function NewOrder() {
         <div className="comments__container">
           <h3>Comments</h3>
           <p>
-            {currentOrder?.comments ? currentOrder?.comments : "No comments"}
+            {acceptedOrder?.comments ? acceptedOrder?.comments : "No comments"}
           </p>
         </div>
-        <button
-          onClick={() => {
-            handleAcceptedOrder();
-            handleOrderVisible(false);
-          }}
-        >
-          Accept Order
-        </button>
       </div>
     </>
   );

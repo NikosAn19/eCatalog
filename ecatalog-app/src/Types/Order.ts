@@ -3,7 +3,8 @@ export type OrderItem = {
   quantity: number;
 };
 export type Order = {
-  tableId?: string;
+  orderId?: string | null;
+  tableId?: string | null;
   drinks?: OrderItem[] | null;
   appetizers?: OrderItem[] | null;
   main?: OrderItem[] | null;

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Order, OrderItem } from "../Types/Order";
+import { Order } from "../Types/Order";
 import { convertToCamelCase } from "../Utils/Formatters/objectFormatter";
 const WS_ENDPOINT = "ws://localhost:5078/ws";
 
@@ -17,6 +17,7 @@ export const useWebSocketConnection = () => {
     ws.current.onmessage = (event) => {
       try {
         const rawData = JSON.parse(event.data);
+        console.log("RAW DATA:", rawData);
         const data = convertToCamelCase(rawData);
         console.log("Message received from server:", data);
 

@@ -40,9 +40,6 @@
 .ongoing__container li:hover {
   background-color: var(--background-color);
 }
-.ongoing__container li:nth-child(2) {
-  border: 1px solid red;
-}
 
 .ongoing__container button:hover {
   background-color: var(--third-color);

@@ -10,10 +10,21 @@ type TableItemProps = {
 export default function TableItem({ tableData }: TableItemProps) {
   const [orderStatus, setOrderStatus] = useState(tableData.status);
 
+  // if (tableData.acceptedOrders > 0 && tableData.onHoldOrders === 0) {
+  //   setOrderStatus("Waiting");
+  // } else if (tableData.acceptedOrders > 0 && tableData.onHoldOrders > 0) {
+  //   setOrderStatus("Just Ordered");
+  // } else if (tableData.acceptedOrders === 0 && tableData.onHoldOrders > 0) {
+  //   setOrderStatus("Just Ordered");
+  // } else {
+  //   setOrderStatus("Default");
+  // }
+
   useEffect(() => {
     setOrderStatus(tableData.status); // Ενημέρωση του local state αν αλλάξει το props
+
     console.log("TableItem state is :", orderStatus);
-  }, [tableData.status]);
+  }, [tableData]);
 
   const setDefault = () => {
     setOrderStatus("Default");
@@ -27,7 +38,7 @@ export default function TableItem({ tableData }: TableItemProps) {
     setOrderStatus("Waiting");
   };
 
-  const { handleOrderVisible } = useOrderContext();
+  const { handleOrderVisible, handleTableClicked } = useOrderContext();
 
   return (
     <>
@@ -41,6 +52,7 @@ export default function TableItem({ tableData }: TableItemProps) {
         }
         onClick={() => {
           // setDefault();
+          handleTableClicked(tableData.tableName);
           handleOrderVisible(true);
         }}
       >
