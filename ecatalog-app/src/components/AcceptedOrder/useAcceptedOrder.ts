@@ -12,17 +12,22 @@ export const useAcceptedOrder = () => {
   //Diamorfonoume thn Order gia na thn epeksergastoume sto UI (xwris tableId kai comments gia to mapping)
   useEffect(() => {
     if (acceptedOrder) {
+      console.log("Accepted Order before formmating :", acceptedOrder);
       const newMappedOrder = Object.fromEntries(
         Object.entries(acceptedOrder)
           .filter(
             ([key]) =>
-              key !== "tableId" && key !== "comments" && key !== "acceptedAt"
+              key !== "tableId" &&
+              key !== "orderId" &&
+              key !== "comments" &&
+              key !== "acceptedAt"
           )
           .map(([key, value]) => [
             key,
             value === null ? [] : (value as OrderItem[]),
           ])
       );
+      console.log("Accepted Order mapped : ", newMappedOrder);
       setMappedOrder(newMappedOrder);
     } else {
       setMappedOrder(null);

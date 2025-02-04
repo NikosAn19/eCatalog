@@ -2,11 +2,22 @@
 
 .add-new-product-title__container {
   position: absolute;
-  left: 45%;
+  left: 38%;
   top: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: left;
   /* border: 1px solid red; */
 }
 .add-new-product-title__container span {
   color: var(--text-color);
   font-size: 26px;
+}
+#important-note {
+  font-size: 18px;
+  color: green;
+}
+#title {
+  text-align: center;
 }

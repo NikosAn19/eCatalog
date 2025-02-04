@@ -7,8 +7,10 @@ import { useState } from "react";
 
 export default function AddNewProductPage() {
   const [showPopup, setShowPopup] = useState(false);
+  const [productTitle, setProductTitle] = useState("");
 
-  const handleAcceptedVisible = () => {
+  const handleAcceptedVisible = (title: string) => {
+    setProductTitle(title);
     setShowPopup(true);
     console.log("popup mounted");
     setTimeout(() => {
@@ -18,10 +20,13 @@ export default function AddNewProductPage() {
   return (
     <>
       <div className="add-new-product-title__container">
-        <span>Add New Product</span>
+        <span id="title">Add New Product</span>
+        <span id="important-note">
+          Important: Customers will see new products in their next refresh!
+        </span>
       </div>
       <AddNewProductForm showPopup={handleAcceptedVisible} />
-      {showPopup && <ItemAdded productName="product" />}
+      {showPopup && <ItemAdded productName={productTitle} />}
     </>
   );
 }
